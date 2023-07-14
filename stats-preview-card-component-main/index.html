@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="conteiner flex justify">
+    <div class="card flex flex-wrap">
+      <!-- card content -->
+      <div class="card__content">
+        <div class="card__content_header">
+          <h1>Get <span class="text-violet">insights</span> that help your business grow.</h1>
+        </div>
+
+        <div class="card__content_description">
+          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.</p>
+        </div>
+
+        <div class="card__content_egg flex egg-justify">
+          <div class="egg_item">
+            <h2>10k+</h2>
+            <p>companies</p>
+          </div>
+          <div class="egg_item">
+            <h2>314</h2>
+            <p>templates</p>
+          </div>
+          <div class="egg_item">
+            <h2>12m+</h2>
+            <p>queries</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- card picture -->
+      <div class="card__picture">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/image-header-desktop.jpg">
+          <source media="(min-width: 0px)" srcset="images/image-header-mobile.jpg">
+          <img src="images/image-header-desktop.jpg" alt="product image">
+        </picture>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- footer attribution -->
+  <footer></footer>
+  <script src="resourse/fem-footer.js"></script>
+</body>
+
+</html>

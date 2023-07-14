@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url(../resourse/normaliz-style-min.css);
+@import url(../resourse/fem-footer-style.css);
+
+// # Front-end Style Guide
+// ## Layout
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+// ### Primary
+$color-Cyan: hsl(179, 62%, 43%);
+$color-Bright-Yellow: hsl(71, 73%, 54%);
+
+// ### Neutral
+$color-Light-Gray: hsl(204, 43%, 93%);
+$color-Grayish-Blue: hsl(218, 22%, 67%);
+$color-bg: #e6eff6;
+
+// ## Typography
+$font-size-paragraf: 16px;
+
+// ### Font
+$font-family: "Karla";
+$fWeights400: 400;
+$fWeights700: 700;
+
+// ## my_Variables
+$conteiner-w: 640px;
+$conteiner-h: 475px;
+$item-w: 320px;
+$item-h: 260px;
+
+// ================== //
+// ### main styles
+body {
+	font-family: $font-family;
+	font-size: $font-size-paragraf;
+	background-color: $color-bg;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+.conteiner {
+	width: 100%;
+	min-height: 100vh;
+
+	@media (max-width: 768px) {
+		margin: 30px 0;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.j-center {
+	justify-content: center;
+}
+
+.a-center {
+	align-items: center;
+}
+
+// ================== //
+// ### grid styles
+
+.grid {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: auto 20px;
+
+	@media (min-width: 768px) {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: repeat(auto-fit, $item-w);
+		max-width: $conteiner-w;
+	}
+}
+
+.grid__item {
+	width: 100%;
+	// height: $item-h;
+	padding: 45px 45px 40px;
+	display: grid;
+	grid-auto-flow: row;
+	align-content: space-between;
+	// justify-content: center;
+	// align-items: center;
+	gap: 30px;
+
+	@media (min-width: 576px) {
+		width: $item-w;
+	}
+}
+
+.col-2 {
+	@media (min-width: 768px) {
+		grid-column: span 2;
+		width: 100%;
+	}
+}
+
+// ================== //
+// ### item styles
+
+.Header {
+	grid-template: repeat(3, auto) / 1fr;
+	& h1 {
+		color: $color-Cyan;
+		font-size: $font-size-paragraf * 2;
+		font-weight: $fWeights700;
+	}
+
+	& p {
+		color: $color-Bright-Yellow;
+	}
+
+	& p:last-child {
+		color: $color-Grayish-Blue;
+		font-size: $font-size-paragraf - 2px;
+	}
+}
+
+.Subscription {
+	background-color: $color-Cyan;
+	color: white;
+
+	& h2 {
+		font-size: $font-size-paragraf * 1.2;
+		font-weight: $fWeights700;
+	}
+
+	& .price {
+		font-size: $font-size-paragraf * 2;
+		font-weight: $fWeights700;
+	}
+
+	& .price-description {
+		color: $color-Grayish-Blue;
+		vertical-align: super;
+	}
+
+	& p {
+		font-size: $font-size-paragraf - 4px;
+	}
+
+	.btn {
+		max-width: 235px;
+		height: 50px;
+		border-radius: 10px;
+		background-color: $color-Bright-Yellow;
+		color: white;
+		font-size: $font-size-paragraf;
+		font-weight: $fWeights700;
+		// align-self: center;
+
+		@media (min-width: 375px) {
+			width: 100%;
+		}
+
+		&:active {
+			background-color: $color-Grayish-Blue;
+		}
+	}
+}
+
+.Whyus {
+	background-color: $color-Cyan;
+	opacity: 0.7;
+	color: white;
+
+	& h2 {
+		font-size: $font-size-paragraf * 1.2;
+		font-weight: $fWeights700;
+	}
+
+	& p {
+		font-size: $font-size-paragraf - 2px;
+	}
+}
