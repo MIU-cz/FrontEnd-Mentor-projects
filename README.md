@@ -168,3 +168,25 @@
 - Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/nft-preview-card/)
 
 ===========================
+
+### Age calculator app solution
+
+---
+
+<img src="age-calc/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/age-calc)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/age-calc/)
+
+===========================
+
+### 3-column preview card component solution
+
+---
+
+<img src="3-column-preview-card-component/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/3-column-preview-card-component)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/3-column-preview-card-component/)
+
+===========================

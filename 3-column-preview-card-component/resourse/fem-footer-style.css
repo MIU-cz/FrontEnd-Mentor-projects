@@ -1,0 +1,17 @@
+/* ---footer--- */
+:root {
+	--my-link-color: #45818e;
+}
+
+.attribution {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.attribution a {
+	color: var(--my-link-color);
+}
