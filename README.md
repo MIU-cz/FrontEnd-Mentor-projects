@@ -80,3 +80,25 @@
 - Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/qr-code/)
 
 ===========================
+
+### Profile card component solution
+
+---
+
+<img src="profile-card-component/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/profile-card-component)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/profile-card-component/)
+
+===========================
+
+### Product preview card component solution
+
+---
+
+<img src="product-preview-card/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/product-preview-card)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/product-preview-card/)
+
+===========================
