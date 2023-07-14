@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+@import url(../resourse/normaliz-style.css);
+@import url(../resourse/fem-footer-style.css);
+
+// # Front-end Style Guide
+// ## Layout
+
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+// ### Primary
+$Orange: hsl(25, 97%, 53%);
+
+// ### Neutral
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+// ## Typography
+// ### Body Copy
+$Font-size-paragraph: 15px;
+$Font-size-title: 24px;
+
+// ### Font
+$Font-Family: "Overpass";
+$w400: 400;
+$w700: 700;
+
+// ### Variables
+$card-Width: 410px;
+$card-Height: 415px;
+$padding: 30px;
+$margin: 30px;
+
+// ===============
+// ## main styles
+:root {
+	font-family: $Font-Family;
+	letter-spacing: 0.01em;
+}
+
+body {
+	background-color: $Very-Dark-Blue;
+}
+
+.conteiner {
+	width: 100%;
+	height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify {
+	justify-content: center;
+	align-items: center;
+}
+
+// ===============
+// ### card styles
+.card {
+	width: $card-Width;
+	height: $card-Height;
+	flex-wrap: wrap;
+	// justify-content: center;
+	align-content: space-between;
+
+	background-color: $Dark-Blue;
+	background: radial-gradient(farthest-corner at 50% 10%, $Dark-Blue, $Very-Dark-Blue);
+	mix-blend-mode: exclusion;
+
+	border-radius: 25px;
+	overflow: hidden;
+	padding: $padding;
+	margin: auto $margin - 10px;
+
+	@media (max-width: 450px) {
+		height: auto;
+	}
+}
+
+.card__image {
+	width: 50px;
+	height: 50px;
+	background-color: $Medium-Grey;
+	border-radius: 50%;
+
+	@media (max-width: 450px) {
+		margin-bottom: $margin;
+	}
+}
+
+.card__text {
+	width: 100%;
+
+	& h1 {
+		font-size: $Font-size-title;
+		font-weight: $w700;
+		color: $White;
+		margin-bottom: $margin - 10px;
+	}
+
+	& p {
+		font-size: $Font-size-paragraph;
+		color: $Light-Grey;
+		line-height: 1.5em;
+	}
+
+	@media (max-width: 450px) {
+		margin-bottom: $margin;
+	}
+}
+
+// ===============
+// ### form styles
+.rate__form {
+	width: 100%;
+	text-align: center;
+}
+
+.rate__form_inputs {
+	width: 100%;
+	display: grid;
+	grid-template: 1fr / repeat(5, 1fr);
+
+	margin-bottom: $margin;
+	justify-items: center;
+}
+
+.rate__label {
+	width: 100%;
+	height: 100%;
+
+	@media (min-width: 375px) {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.rate__label span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+
+	text-align: center;
+	padding-top: 16px;
+	font-size: $Font-size-title;
+	color: $White;
+
+	opacity: 0.3;
+	background-color: $Light-Grey;
+
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	// &:active {
+	// 	background-color: $Orange;
+	// 	opacity: 1;
+	// }
+
+	&.rate-active {
+		background-color: $Orange;
+		opacity: 1;
+	}
+}
+
+.rate_input {
+	display: none;
+	// &:checked + .rate__label > span {
+	// 	background-color: $Orange;
+	// 	opacity: 1;
+	// }
+}
+
+.btn {
+	width: 340px;
+	height: 45px;
+	background-color: $Orange;
+	border-radius: 25px;
+	color: $White;
+	text-transform: uppercase;
+	font-weight: $w700;
+	letter-spacing: 2px;
+
+	@media (max-width: 450px) {
+		width: 100%;
+	}
+
+	&:hover {
+		background-color: $White;
+		color: $Orange;
+	}
+}
+
+.errors {
+	color: red;
+	font-weight: $w700;
+	margin-top: $margin;
+}
+
+// <!-- Rating state end -- >
+// <!-- Thank you state start -- >
+
+.conteiner__modal {
+	position: absolute;
+	top: 0;
+	background-color: $Very-Dark-Blue;
+	z-index: 1000;
+	transition: all 0.3s;
+}
+
+.hidden {
+	display: none;
+}
+
+.modal__card {
+	justify-content: center;
+	text-align: center;
+	padding: $padding * 2 $padding;
+}
+
+.modal__image {
+}
+
+.modal__result {
+	width: 100%;
+
+	span {
+		// width: 75%;
+		padding: $padding - 25px $padding - 10px;
+		color: $Orange;
+		border-radius: 25px;
+		// background-color: opacify($color: $Light-Grey, $amount: 0.3);
+		background-color: transparentize($color: $Light-Grey, $amount: 0.75);
+	}
+}
+
+.card__text {
+}
+.modal__text {
+}
+
+// #Footer
+// ### attribution
+.attribution {
+	// color: $Light-Grey;
+	// background-color: $Light-Grey;
+
+	a {
+		// color: $White;
+	}
+}

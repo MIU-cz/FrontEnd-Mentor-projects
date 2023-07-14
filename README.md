@@ -102,3 +102,47 @@
 - Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/product-preview-card/)
 
 ===========================
+
+### Order summary card solution
+
+---
+
+<img src="order-summary-component/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/order-summary-component)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/order-summary-component/)
+
+===========================
+
+### NFT preview card component
+
+---
+
+<img src="nft-preview-card/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/nft-preview-card)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/nft-preview-card/)
+
+===========================
+
+### Interactive rating component solution
+
+---
+
+<img src="interactive-rating-component/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/interactive-rating-component)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/interactive-rating-component/)
+
+===========================
+
+### Huddle landing page with single introductory section solution
+
+---
+
+<img src="huddle-landing-page-with-single-introductory-section/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/huddle-landing-page-with-single-introductory-section)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/huddle-landing-page-with-single-introductory-section/)
+
+===========================
