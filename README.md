@@ -69,3 +69,14 @@
 - Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/result-summary/)
 
 ===========================
+
+### QR code component solution
+
+---
+
+<img src="qr-code/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/qr-code)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/qr-code/)
+
+===========================
