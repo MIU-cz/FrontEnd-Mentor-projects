@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("../resourse/normaliz-style-min.css");
+@import url("../resourse/fem-footer-style.css");
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins";
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5em;
+}
+
+.conteiner {
+  width: 100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .conteiner {
+    margin: 30px 0;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.content__grid {
+  margin: auto 20px;
+}
+@media (min-width: 375px) {
+  .content__grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .content__grid {
+    max-width: 1110px;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid__item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 375px) {
+  .grid__item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .grid__item {
+    width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .grid__item {
+    width: 100%;
+  }
+}
+
+.item_card_grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template: repeat(2, auto)/1fr;
+  align-content: space-between;
+}
+@media (min-width: 375px) {
+  .item_card_grid {
+    height: 250px;
+  }
+}
+
+@media (min-width: 576px) {
+  .grid__header {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .grid__header {
+    grid-column: span 2;
+    width: 525px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid__header {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-2 {
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-2 {
+    order: 2;
+  }
+}
+
+.header_content {
+  text-align: center;
+}
+.header_content h1 {
+  font-size: 26px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+.header_content h2 {
+  font-size: 26px;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.header_content p {
+  margin-bottom: 45px;
+}
+
+.item_card {
+  padding: 30px;
+  border-top: solid 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 1px hsl(229, 6%, 66%);
+}
+
+.Supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.Team-Builder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.Karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.Calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.card_header {
+  width: 100%;
+}
+.card_header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 15px;
+}
+.card_header p {
+  font-size: 12px;
+}
+
+.card_image {
+  justify-self: end;
+}/*# sourceMappingURL=style.css.map */
