@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+@import url(../resourse/normaliz-style-min.css);
+@import url(../resourse/fem-footer-style.css);
+
+// # Front-end Style Guide
+
+// ## Layout
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+$color-card-violet: hsl(263, 55%, 52%); //Moderate violet
+$color-card-grayish: hsl(217, 19%, 35%); //Very dark grayish blue
+$color-card-blackish: hsl(219, 29%, 14%); //Very dark blackish blue
+$color-White: hsl(0, 0%, 100%);
+
+// ### Neutral
+$color-gray: hsl(0, 0%, 81%); //Light gray
+$color-bg: hsl(210, 46%, 95%); //Light grayish blue
+
+// Note for text colors:
+// 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+// 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+// ## Typography
+$font-body: 13px;
+
+// ### Font
+// - Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+$font-family: "Barlow Semi Condensed", sans-serif;
+// - Weights: 500, 600
+
+//# My Variables
+$bord-w: 1110px;
+$bord-h: 575x;
+
+$card-w: 256px;
+$card-h: 270px;
+
+$card-w-w: 542px;
+$card-h-h: $bord-h;
+
+$gap: 30px;
+$foto-w: 32px;
+
+// # ================= #
+// # Main Style:
+body {
+	background-color: $color-bg;
+	font-family: $font-family;
+	font-size: $font-body;
+	font-weight: 500;
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+}
+
+@media (min-width: 890px) {
+	.conteiner {
+		width: 100%;
+		min-height: 100vh;
+	}
+	.flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax($card-w, 1fr));
+	// grid-auto-flow: row;
+	gap: $gap;
+
+	@media (min-width: 890px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.span-col2 {
+	@media (min-width: 576px) {
+		grid-column: span 2;
+	}
+}
+
+.span-row2 {
+	@media (min-width: 576px) {
+		grid-column: span 2;
+	}
+
+	// @media (min-width: 890px) {
+	// 	grid-column: span 1;
+	// 	grid-row: span 2;
+	// }
+}
+
+.order {
+	// order: -1;
+	@media (min-width: 890px) {
+		grid-column: 4;
+		grid-row: 1/3;
+	}
+}
+
+// # ================= #
+// # Content Style:
+
+.bord {
+	margin: 0 $gap;
+	max-width: $bord-w;
+
+	@media (max-width: 992px) {
+		margin-top: $gap;
+	}
+}
+.card-item {
+	// @media (min-width: 890px) {
+	// 	width: $card-w;
+	// }
+	color: $color-card-blackish;
+	background-color: $color-White;
+	border-radius: 10px;
+	padding: $gap;
+
+	display: grid;
+	grid-auto-flow: row;
+	gap: $gap - 10px;
+
+	align-items: start;
+	box-shadow: 0 5px 10px 5px $color-gray;
+}
+
+.card__title {
+	width: 100%;
+	display: grid;
+	grid-template-columns: $foto-w 1fr;
+	gap: $gap;
+	align-items: center;
+}
+.foto {
+	width: $foto-w + 2px;
+	height: $foto-w + 2px;
+	border-radius: 50%;
+	border: 2px solid $color-bg;
+	overflow: hidden;
+	// border: transparent;
+
+	& img {
+		width: 100%;
+	}
+}
+.name {
+	& h2 {
+		font-weight: 600;
+	}
+	& span {
+		opacity: 50%;
+	}
+}
+
+.card__header {
+	font-size: $font-body * 1.5;
+	line-height: 1.5em;
+}
+
+.card__description {
+	opacity: 0.7;
+}
+
+@mixin font-style {
+	color: $color-White;
+}
+
+.bg-violet {
+	background-color: $color-card-violet;
+	@include font-style();
+	background-image: url(../images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 80% 0;
+	background-size: 120px 120px;
+}
+
+.bg-grayish {
+	background-color: $color-card-grayish;
+	@include font-style();
+}
+
+.bg-blackish {
+	background-color: $color-card-blackish;
+	@include font-style();
+}
