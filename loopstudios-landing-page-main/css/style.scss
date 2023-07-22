@@ -1,0 +1,68 @@
+// # Front-end Style Guide
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+// ## Layout
+// The designs were created to the following widths:
+$Mobile: "min-whidth: 375px";
+$Desktop: "min-whidth: 1440px";
+
+// ## Colors
+// ### Primary
+$color-White: hsl(0, 0%, 100%);
+$color-Black: hsl(0, 0%, 0%);
+$color-Dark-Gray: hsl(0, 0%, 55%);
+$color-Very-Dark-Gray: hsl(0, 0%, 41%);
+
+// ### Neutral
+
+// ## Typography
+// ### Body Copy
+$Font-size: 15px;
+
+// ### Fonts
+$font-family-Alata: "Alata", sans-serif; // - headers
+$font-Weight-alata: 400;
+$font-family-Josefin: "Josefin Sans", sans-serif; // - paragraf
+$font-Weight-josefin: 300;
+
+// ## Variables
+$main-section-width: 1440px;
+
+// # MAIN STYLES
+// ================================
+body {
+	font-family: $font-family-Josefin;
+	font-size: $Font-size;
+	font-weight: $font-Weight-josefin;
+}
+
+.main_section {
+	width: $main-section-width;
+	margin: 0 auto;
+}
+
+.section {
+	width: 100%;
+	padding: 100px 160px;
+}
+
+// # HEADER STYLES
+// ================================
+.header {
+	background-image: url(../images/desktop/image-hero.jpg);
+}
+
+.navBar {
+	width: 100%;
+	height: 160px;
+	padding: 0 160px;
+}
+
+.brand {
+}
+
+.menu {
+}
+
+.section__title {
+}

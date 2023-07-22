@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.main_section {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  padding: 100px 160px;
+}
+
+.header {
+  background-image: url(../images/desktop/image-hero.jpg);
+}
+
+.navBar {
+  width: 100%;
+  height: 160px;
+  padding: 0 160px;
+}/*# sourceMappingURL=style.css.map */
