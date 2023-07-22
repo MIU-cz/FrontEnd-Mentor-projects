@@ -4,6 +4,17 @@
 
 ## -> list of projects  
 
+### Loopstudios landing page solution
+
+---
+
+<img src="loopstudios-landing-page-main/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/loopstudios-landing-page-main)
+- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/loopstudios-landing-page-main/)
+
+===========================
+
 ### Blogr landing page solution
 
 ---
