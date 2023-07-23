@@ -144,7 +144,7 @@ body {
 }
 .grid__item img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .grid_link {
@@ -193,7 +193,7 @@ body {
   gap: 20px;
 }
 
-.copiright {
+.copyright {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Alata", sans-serif;
   letter-spacing: 0.1em;
