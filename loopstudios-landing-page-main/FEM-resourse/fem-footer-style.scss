@@ -27,7 +27,7 @@ $color-text: #fff;
 
 	text-align: center;
 	letter-spacing: 0.1em;
-	color: currentColor;
+	color: $color-text;
 
 	&_description {
 		width: 100%;
@@ -39,7 +39,7 @@ $color-text: #fff;
 	}
 
 	a {
-		color: $color-link;
+		color: inherit;
 
 		&:hover {
 			color: $color-hover;
@@ -67,9 +67,9 @@ $color-text: #fff;
 	}
 }
 
-@media (min-width: 768px) {
-	.attribution {
-		position: fixed;
-		bottom: 0;
-	}
-}
+// @media (min-width: 768px) {
+// 	.attribution {
+// 		position: fixed;
+// 		bottom: 0;
+// 	}
+// }
