@@ -75,15 +75,16 @@ body {
 .navBar {
 	width: 100%;
 	height: 160px;
-	padding: 0 160px;
+	padding: 5vw;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
 
-// .brand {
-// }
+	@media (min-width: 992px) {
+		padding: 0 160px;
+	}
+}
 
 .menu {
 	&_items {
@@ -133,7 +134,8 @@ body {
 
 .header__section {
 	width: 100%;
-	padding: 160px 20px;
+	padding-top: 160px;
+	padding-bottom: 160px;
 	margin: 0;
 
 	display: flex;
@@ -141,9 +143,9 @@ body {
 
 	&_title {
 		width: 100%;
-		padding: 40px;
+		padding: 20px;
 
-		font-size: $Font-size * 4;
+		font-size: $Font-size * 3;
 		color: $color-White;
 		text-transform: uppercase;
 		line-height: 1;
@@ -155,11 +157,105 @@ body {
 		&_title {
 			width: 650px;
 			padding: 40px;
+			font-size: $Font-size * 4;
 		}
 	}
 
 	@media (min-width: 992px) {
 		height: calc(100% - 160px);
+	}
+}
+
+// # Hamburger-MENU STYLES
+// ================================
+@media (max-width: 992px) {
+	.header_menu {
+		position: absolute;
+		top: -100vh;
+		left: 0;
+		z-index: 100;
+		transition: all 0.3s;
+
+		width: 100%;
+		height: 100vh;
+		padding-top: 25vh;
+		background-color: $color-Black;
+
+		&-active {
+			top: 0;
+		}
+
+		.menu_item {
+			width: 100%;
+			padding-left: 5vw;
+
+			&:hover::after {
+				width: 80%;
+			}
+		}
+
+		.menu_item_link {
+			width: 100%;
+			display: block;
+			font-size: $Font-size * 3;
+			font-family: $font-family-Josefin;
+			font-weight: $font-Weight-josefin;
+			text-transform: uppercase;
+		}
+	}
+
+	.brand {
+		z-index: 101;
+	}
+
+	.btn_burger {
+		margin: 0 0 0 auto;
+		width: 24px;
+		height: 24px;
+		display: block;
+		position: relative;
+
+		background-color: inherit;
+
+		&::before,
+		&::after,
+		& span {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: white;
+			transition: all 0.3s;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		& span {
+			top: 11px;
+		}
+
+		&-active::before {
+			transform: rotate(45deg);
+			top: 11px;
+		}
+		&-active::after {
+			transform: rotate(135deg);
+			bottom: 11px;
+		}
+		&-active span {
+			// transform: scale(0);
+			display: none;
+		}
+		&-active {
+			// border: solid 2px $color-White;
+			border-radius: 50%;
+			overflow: hidden;
+			z-index: 101;
+		}
 	}
 }
 

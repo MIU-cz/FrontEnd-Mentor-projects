@@ -46,10 +46,15 @@ body {
 .navBar {
   width: 100%;
   height: 160px;
-  padding: 0 160px;
+  padding: 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 992px) {
+  .navBar {
+    padding: 0 160px;
+  }
 }
 
 .menu_items {
@@ -95,15 +100,16 @@ body {
 
 .header__section {
   width: 100%;
-  padding: 160px 20px;
+  padding-top: 160px;
+  padding-bottom: 160px;
   margin: 0;
   display: flex;
   align-items: center;
 }
 .header__section_title {
   width: 100%;
-  padding: 40px;
-  font-size: 60px;
+  padding: 20px;
+  font-size: 45px;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   line-height: 1;
@@ -113,6 +119,7 @@ body {
   .header__section_title {
     width: 650px;
     padding: 40px;
+    font-size: 60px;
   }
 }
 @media (min-width: 992px) {
@@ -121,6 +128,82 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .header_menu {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100vh;
+    padding-top: 25vh;
+    background-color: hsl(0, 0%, 0%);
+  }
+  .header_menu-active {
+    top: 0;
+  }
+  .header_menu .menu_item {
+    width: 100%;
+    padding-left: 5vw;
+  }
+  .header_menu .menu_item:hover::after {
+    width: 80%;
+  }
+  .header_menu .menu_item_link {
+    width: 100%;
+    display: block;
+    font-size: 45px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .brand {
+    z-index: 101;
+  }
+  .btn_burger {
+    margin: 0 0 0 auto;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: relative;
+    background-color: inherit;
+  }
+  .btn_burger::before, .btn_burger::after, .btn_burger span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+  }
+  .btn_burger::before {
+    top: 0;
+  }
+  .btn_burger::after {
+    bottom: 0;
+  }
+  .btn_burger span {
+    top: 11px;
+  }
+  .btn_burger-active::before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  .btn_burger-active::after {
+    transform: rotate(135deg);
+    bottom: 11px;
+  }
+  .btn_burger-active span {
+    display: none;
+  }
+  .btn_burger-active {
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 101;
+  }
+}
 .section__content {
   width: 100%;
   position: relative;
